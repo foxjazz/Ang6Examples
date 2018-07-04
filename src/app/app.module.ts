@@ -8,7 +8,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { TableOfContentsComponent } from './table-of-contents/table-of-contents.component';
 
 const routes: Routes = [
-  { path: 'first', component: FirstComponent }
+  { path: 'first', component: FirstComponent},{ path: 'toc', component: TableOfContentsComponent }
 ];
 
 @NgModule({

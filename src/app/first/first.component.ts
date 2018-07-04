@@ -45,7 +45,7 @@ export class FirstComponent implements OnInit {
     try {
       this.data2 = Object.assign({}, this.data1);
     }
-    catch(e){
+    catch (e) {
       this.error = JSON.stringify(e);
     }
   }

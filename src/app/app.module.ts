@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import {RouterModule, Routes} from '@angular/router';
+import { TableOfContentsComponent } from './table-of-contents/table-of-contents.component';
 
 const routes: Routes = [
   { path: 'first', component: FirstComponent }
@@ -13,7 +14,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent
+    FirstComponent,
+    TableOfContentsComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes, {enableTracing: true}),

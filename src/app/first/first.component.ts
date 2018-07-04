@@ -12,10 +12,12 @@ export class FirstComponent implements OnInit {
   public error: string;
   public data1: DataModel[];
   public data2: DataModel[] = [];
+  public refCount;
   private datas: string;
-  constructor() { this.error = "";}
+  constructor() { this.error = ""; this.refCount = 0;}
 
   ngOnInit() {
+    this.refCount++;
     // this.datas = new Data().getdata();
     this.data1 = JSON.parse(this.datas = new Data().getdata());
 

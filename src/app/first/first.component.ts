@@ -45,7 +45,7 @@ export class FirstComponent implements OnInit {
 
   public copy4() {
     try {
-      this.data2 = Object.assign({}, this.data1);
+      this.data2 = Object.assign([], this.data1);
     }
     catch (e) {
       this.error = JSON.stringify(e);
